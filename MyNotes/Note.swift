@@ -30,17 +30,20 @@ class Note: Equatable, Codable {
         }
     }
     
-    //  Initializer
+    //  MARK: - Initializer
+    
     init () {
         self.text = ""
     }
     
-    //  Methods
+   //  MARK: - Mutating methods
+    
     func changeText(newText: String) {
         self.text = newText
     }
     
-    //  Equatable implementation
+    //  MARK: - Equatable implementation
+    
     static func == (lhs: Note, rhs: Note) -> Bool {
         lhs.id == rhs.id
     }

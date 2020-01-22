@@ -24,14 +24,6 @@ class TableViewController: UITableViewController {
         let compose = UIBarButtonItem(barButtonSystemItem: .compose, target: self, action: #selector(createNote))
         toolbarItems = [spacer, compose]
         navigationController?.isToolbarHidden = false
-        
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "NoteCell")
-        
-        loadNotes()
-    }
-
-    private func loadNotes() {
-        
     }
     
     // MARK: - Work with notes methods
